@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens Dragon Ball - Yane Bezerra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Personagens Dragon Ball</header>
+
+    <audio id="bg-music" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="formUser">
+        <div class="filter-group">
+            <span class="label">Gênero</span>
+            <label><input type="radio" name="g" checked> Ambos</label>
+            <label><input type="radio" name="g" value="Male"> Homem</label>
+            <label><input type="radio" name="g" value="Female"> Mulher</label>
+        </div>
+
+        <div class="filter-group">
+            <span class="label">Raça</span>
+            <select id="race">
+                <option value="">Todas</option>
+                <option value="Human">Humano</option>
+                <option value="Saiyan">Saiyajin</option>
+                <option value="Namekian">Namekuseijin</option>
+                <option value="Majin">Majin</option>
+                <option value="Frieza Race">Raça Frieza</option>
+                <option value="Android">Androide</option>
+                <option value="God">Deus</option>
+                <option value="Angel">Anjo</option>
+                <option value="Unknown">Desconhecida</option>
+            </select>
+        </div>
+
+        <button onclick="buscar()">Buscar Personagens</button>
+    </div>
+
+    <div class="allUsers">
+        </div>
+
+    <footer>
+        <p>&copy; 2026 | Desenvolvido por <b>Yane Bezerra</b> - ADS Web 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
